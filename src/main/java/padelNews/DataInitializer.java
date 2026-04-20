@@ -1,9 +1,9 @@
 package padelNews;
 
-import com.padelPlay.entity.*;
-import com.padelPlay.entity.enums.TypeAdministrateur;
-import com.padelPlay.entity.enums.TypeMembre;
-import com.padelPlay.repository.*;
+import padelNews.entity.*;
+import padelNews.entity.enums.TypeAdministrateur;
+import padelNews.entity.enums.TypeMembre;
+import padelNews.repository.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

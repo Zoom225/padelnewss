@@ -1,6 +1,6 @@
 package padelNews.service;
 
-import com.padelPlay.entity.Paiement;
+import padelNews.entity.Paiement;
 
 import java.util.List;
 

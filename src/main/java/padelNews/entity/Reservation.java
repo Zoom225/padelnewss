@@ -1,6 +1,6 @@
 package padelNews.entity;
 
-import com.padelPlay.entity.enums.StatutReservation;
+import padelNews.entity.enums.StatutReservation;
 import jakarta.persistence.*;
 import lombok.*;
 

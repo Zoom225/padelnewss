@@ -1,6 +1,6 @@
 package padelNews.repository;
 
-import com.padelPlay.entity.JourFermeture;
+import padelNews.entity.JourFermeture;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

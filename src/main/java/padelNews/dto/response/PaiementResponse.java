@@ -1,6 +1,6 @@
 package padelNews.dto.response;
 
-import com.padelPlay.entity.enums.StatutPaiement;
+import padelNews.entity.enums.StatutPaiement;
 import lombok.*;
 
 import java.time.LocalDateTime;

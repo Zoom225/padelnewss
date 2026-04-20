@@ -1,7 +1,7 @@
 package padelNews.config;
 
-import com.padelPlay.entity.Administrateur;
-import com.padelPlay.repository.AdministrateurRepository;
+import padelNews.entity.Administrateur;
+import padelNews.repository.AdministrateurRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

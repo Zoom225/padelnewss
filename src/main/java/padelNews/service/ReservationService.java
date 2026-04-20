@@ -1,6 +1,6 @@
 package padelNews.service;
 
-import com.padelPlay.entity.Reservation;
+import padelNews.entity.Reservation;
 
 import java.util.List;
 
