@@ -1,7 +1,7 @@
 package padelNews.repository;
 
 
-import com.padelNews.entity.Match;
+import padelNews.entity.Match;
 import padelNews.entity.enums.StatutMatch;
 import padelNews.entity.enums.TypeMatch;
 import org.springframework.data.jpa.repository.JpaRepository;

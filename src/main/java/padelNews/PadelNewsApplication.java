@@ -9,5 +9,4 @@ public class PadelNewsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PadelNewsApplication.class, args);
 	}
-
 }
