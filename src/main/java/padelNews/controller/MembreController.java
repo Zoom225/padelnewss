@@ -1,12 +1,12 @@
 package padelNews.controller;
 
-import com.padelPlay.dto.request.MembreRequest;
-import com.padelPlay.dto.response.MembreResponse;
-import com.padelPlay.entity.Membre;
-import com.padelPlay.entity.Site;
-import com.padelPlay.mapper.MembreMapper;
-import com.padelPlay.service.MembreService;
-import com.padelPlay.service.SiteService;
+import padelNews.dto.request.MembreRequest;
+import padelNews.dto.response.MembreResponse;
+import padelNews.entity.Membre;
+import padelNews.entity.Site;
+import padelNews.mapper.MembreMapper;
+import padelNews.service.MembreService;
+import padelNews.service.SiteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;

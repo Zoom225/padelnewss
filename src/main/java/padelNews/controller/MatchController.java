@@ -1,10 +1,10 @@
 package padelNews.controller;
 
-import com.padelPlay.dto.request.MatchRequest;
-import com.padelPlay.dto.response.MatchResponse;
-import com.padelPlay.entity.Match;
-import com.padelPlay.mapper.MatchMapper;
-import com.padelPlay.service.MatchService;
+import padelNews.dto.request.MatchRequest;
+import padelNews.dto.response.MatchResponse;
+import padelNews.entity.Match;
+import padelNews.mapper.MatchMapper;
+import padelNews.service.MatchService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;

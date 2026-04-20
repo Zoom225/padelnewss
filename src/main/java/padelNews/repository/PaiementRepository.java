@@ -1,7 +1,7 @@
 package padelNews.repository;
 
-import com.padelPlay.entity.Paiement;
-import com.padelPlay.entity.enums.StatutPaiement;
+import padelNews.entity.Paiement;
+import padelNews.entity.enums.StatutPaiement;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

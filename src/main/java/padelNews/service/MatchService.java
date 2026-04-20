@@ -1,7 +1,7 @@
 package padelNews.service;
 
 
-import com.padelPlay.entity.Match;
+import padelNews.entity.Match;
 
 import java.time.LocalDate;
 import java.util.List;

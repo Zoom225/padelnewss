@@ -1,12 +1,12 @@
 package padelNews.service.impl;
 
-import com.padelPlay.config.JwtConfig;
-import com.padelPlay.dto.request.LoginRequest;
-import com.padelPlay.dto.response.LoginResponse;
-import com.padelPlay.entity.Administrateur;
-import com.padelPlay.exception.BusinessException;
-import com.padelPlay.repository.AdministrateurRepository;
-import com.padelPlay.service.AuthService;
+import padelNews.config.JwtConfig;
+import padelNews.dto.request.LoginRequest;
+import padelNews.dto.response.LoginResponse;
+import padelNews.entity.Administrateur;
+import padelNews.exception.BusinessException;
+import padelNews.repository.AdministrateurRepository;
+import padelNews.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;

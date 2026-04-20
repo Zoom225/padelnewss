@@ -2,8 +2,8 @@ package padelNews.repository;
 
 
 import com.padelNews.entity.Match;
-import com.padelPlay.entity.enums.StatutMatch;
-import com.padelPlay.entity.enums.TypeMatch;
+import padelNews.entity.enums.StatutMatch;
+import padelNews.entity.enums.TypeMatch;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

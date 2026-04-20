@@ -1,16 +1,16 @@
 package padelNews.service.impl;
 
-import com.padelPlay.entity.Match;
-import com.padelPlay.entity.Membre;
-import com.padelPlay.entity.Terrain;
-import com.padelPlay.entity.enums.StatutMatch;
-import com.padelPlay.entity.enums.TypeMatch;
-import com.padelPlay.exception.BusinessException;
-import com.padelPlay.exception.ResourceNotFoundException;
-import com.padelPlay.repository.MatchRepository;
-import com.padelPlay.service.MatchService;
-import com.padelPlay.service.MembreService;
-import com.padelPlay.service.TerrainService;
+import padelNews.entity.Match;
+import padelNews.entity.Membre;
+import padelNews.entity.Terrain;
+import padelNews.entity.enums.StatutMatch;
+import padelNews.entity.enums.TypeMatch;
+import padelNews.exception.BusinessException;
+import padelNews.exception.ResourceNotFoundException;
+import padelNews.repository.MatchRepository;
+import padelNews.service.MatchService;
+import padelNews.service.MembreService;
+import padelNews.service.TerrainService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

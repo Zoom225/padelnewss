@@ -1,6 +1,6 @@
 package padelNews.dto.response;
 
-import com.padelPlay.entity.enums.TypeAdministrateur;
+import padelNews.entity.enums.TypeAdministrateur;
 import lombok.*;
 
 @Getter

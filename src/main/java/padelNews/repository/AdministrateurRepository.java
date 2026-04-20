@@ -1,6 +1,6 @@
 package padelNews.repository;
 
-import com.padelPlay.entity.Administrateur;
+import padelNews.entity.Administrateur;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

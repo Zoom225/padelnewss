@@ -1,7 +1,7 @@
 package padelNews.service;
 
-import com.padelPlay.dto.request.LoginRequest;
-import com.padelPlay.dto.response.LoginResponse;
+import padelNews.dto.request.LoginRequest;
+import padelNews.dto.response.LoginResponse;
 
 public interface AuthService {
     LoginResponse login(LoginRequest request);
