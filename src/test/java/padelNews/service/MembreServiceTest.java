@@ -1,13 +1,13 @@
 package padelNews.service;
 
-import com.padelPlay.entity.Membre;
-import com.padelPlay.entity.Site;
-import com.padelPlay.entity.enums.TypeMembre;
-import com.padelPlay.exception.BusinessException;
-import com.padelPlay.exception.ResourceNotFoundException;
-import com.padelPlay.repository.MembreRepository;
-import com.padelPlay.repository.PenaliteRepository;
-import com.padelPlay.service.impl.MembreServiceImpl;
+import padelNews.entity.Membre;
+import padelNews.entity.Site;
+import padelNews.entity.enums.TypeMembre;
+import padelNews.exception.BusinessException;
+import padelNews.exception.ResourceNotFoundException;
+import padelNews.repository.MembreRepository;
+import padelNews.repository.PenaliteRepository;
+import padelNews.service.impl.MembreServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;

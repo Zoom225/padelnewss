@@ -1,12 +1,12 @@
 package padelNews.service;
 
-import com.padelPlay.entity.*;
-import com.padelPlay.entity.enums.*;
-import com.padelPlay.exception.BusinessException;
-import com.padelPlay.exception.ResourceNotFoundException;
-import com.padelPlay.repository.PaiementRepository;
-import com.padelPlay.repository.ReservationRepository;
-import com.padelPlay.service.impl.ReservationServiceImpl;
+import padelNews.entity.*;
+import padelNews.entity.enums.*;
+import padelNews.exception.BusinessException;
+import padelNews.exception.ResourceNotFoundException;
+import padelNews.repository.PaiementRepository;
+import padelNews.repository.ReservationRepository;
+import padelNews.service.impl.ReservationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -21,6 +21,7 @@ import java.time.LocalTime;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.*;
