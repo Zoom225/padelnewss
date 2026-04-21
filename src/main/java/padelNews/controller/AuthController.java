@@ -20,19 +20,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@Tag(name = "Authentication", description = "Endpoints for administrator authentication. " +
-        "Members do NOT authenticate here — members are identified by their matricule only " +
-        "and do not need a token to access the member-facing endpoints. " +
-        "This authentication is exclusively for administrators (GLOBAL or SITE) " +
-        "who need to access protected management endpoints. " +
-        "Authentication flow: " +
-        "1. Admin sends email + password via POST /api/auth/login. " +
-        "2. Server validates credentials and returns a JWT token valid for 24 hours. " +
-        "3. Admin includes the token in all subsequent requests via the Authorization header: " +
+@Tag(name = "Authentication", description = "Points de terminaison pour l'authentification des administrateurs. " +
+        " Les membres ne s'authentifient PAS ici — ils sont identifiés uniquement par leur matricule" +
+        "et n'ont pas besoin de jeton pour accéder aux points de terminaison destinés aux membres. " +
+        "Cette authentification est réservée exclusivement aux administrateurs (GLOBAL ou SITE) " +
+        "qui doivent accéder aux points de terminaison de gestion protégés " +
+        "Processus d'authentification :  " +
+        "1. L'administrateur envoie son adresse e-mail et son mot de passe via POST /api/auth/login. » " +
+        " 2. Le serveur valide les identifiants et renvoie un jeton JWT valable pendant 24 heures. " +
+        "3. L'administrateur inclut le jeton dans toutes les requêtes suivantes via l'en-tête Authorization :  " +
         "   'Authorization: Bearer <token>'. " +
-        "4. The token encodes the admin's email and role (GLOBAL or SITE). " +
-        "Security note: the same error message is returned whether the email does not exist " +
-        "or the password is wrong — this prevents user enumeration attacks.")
+        "4. Le jeton encode l'adresse e-mail et le rôle de l'administrateur (GLOBAL ou SITE). " +
+        "Remarque de sécurité : le même message d'erreur est renvoyé que l'adresse e-mail n'existe pas " +
+        "ou que le mot de passe soit incorrect — cela empêche les attaques par énumération d'utilisateurs.")
 public class AuthController {
 
     private final AuthService authService;
