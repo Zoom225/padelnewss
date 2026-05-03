@@ -1,16 +1,16 @@
-package com.padelPlay.controller;
+package com.padelNews.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.padelPlay.config.JwtConfig;
-import com.padelPlay.config.SecurityConfig;
-import com.padelPlay.dto.request.MembreRequest;
-import com.padelPlay.dto.response.MembreResponse;
-import com.padelPlay.entity.Membre;
-import com.padelPlay.mapper.MembreMapper;
-import com.padelPlay.repository.AdministrateurRepository;
-import com.padelPlay.repository.MembreRepository;
-import com.padelPlay.service.MembreService;
-import com.padelPlay.service.SiteService;
+import com.padelnewss.config.JwtConfig;
+import com.padelnewss.config.SecurityConfig;
+import com.padelnewss.dto.request.MembreRequest;
+import com.padelnewss.dto.response.MembreResponse;
+import com.padelnewss.entity.Membre;
+import com.padelnewss.mapper.MembreMapper;
+import com.padelnewss.repository.AdministrateurRepository;
+import com.padelnewss.repository.MembreRepository;
+import com.padelnewss.service.MembreService;
+import com.padelnewss.service.SiteService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,8 +21,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-
-import java.util.Collections;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -67,7 +65,7 @@ class MembreControllerTest {
         membreRequest.setMatricule("L12345");
         membreRequest.setNom("Doe");
         membreRequest.setPrenom("John");
-        membreRequest.setTypeMembre(com.padelPlay.entity.enums.TypeMembre.GLOBAL);
+        membreRequest.setTypeMembre(com.padelnewss.entity.enums.TypeMembre.GLOBAL);
 
         membreResponse = new MembreResponse();
         membreResponse.setId(1L);

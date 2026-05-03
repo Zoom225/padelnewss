@@ -1,12 +1,12 @@
-package com.padelPlay.service;
+package com.padelNews.service;
 
-import com.padelPlay.entity.*;
-import com.padelPlay.entity.enums.*;
-import com.padelPlay.exception.BusinessException;
-import com.padelPlay.exception.ResourceNotFoundException;
-import com.padelPlay.repository.PaiementRepository;
-import com.padelPlay.repository.ReservationRepository;
-import com.padelPlay.service.impl.ReservationServiceImpl;
+import com.padelnewss.entity.*;
+import com.padelnewss.entity.enums.*;
+import com.padelnewss.exception.BusinessException;
+import com.padelnewss.exception.ResourceNotFoundException;
+import com.padelnewss.repository.PaiementRepository;
+import com.padelnewss.repository.ReservationRepository;
+import com.padelnewss.service.impl.ReservationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
