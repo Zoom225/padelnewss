@@ -1,13 +1,13 @@
-package com.padelPlay.mapper;
+package com.padelNews.mapper;
 
-import com.padelPlay.dto.response.PaiementResponse;
-import com.padelPlay.dto.response.ReservationResponse;
-import com.padelPlay.entity.Match;
-import com.padelPlay.entity.Membre;
-import com.padelPlay.entity.Paiement;
-import com.padelPlay.entity.Reservation;
-import com.padelPlay.entity.enums.StatutPaiement;
-import com.padelPlay.entity.enums.StatutReservation;
+import com.padelnewss.dto.response.PaiementResponse;
+import com.padelnewss.dto.response.ReservationResponse;
+import com.padelnewss.entity.Match;
+import com.padelnewss.entity.Membre;
+import com.padelnewss.entity.Paiement;
+import com.padelnewss.entity.Reservation;
+import com.padelnewss.entity.enums.StatutPaiement;
+import com.padelnewss.entity.enums.StatutReservation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
