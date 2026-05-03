@@ -1,14 +1,12 @@
-package com.padelNews.service;
+package com.padelPlay.service;
 
-import com.padelNews.entity.*;
-import com.padelNews.entity.enums.*;
-import padelNews.entity.*;
-import padelNews.entity.enums.*;
-import com.padelNews.exception.BusinessException;
-import com.padelNews.exception.ResourceNotFoundException;
-import com.padelNews.repository.PaiementRepository;
-import com.padelNews.repository.ReservationRepository;
-import com.padelNews.service.impl.ReservationServiceImpl;
+import com.padelPlay.entity.*;
+import com.padelPlay.entity.enums.*;
+import com.padelPlay.exception.BusinessException;
+import com.padelPlay.exception.ResourceNotFoundException;
+import com.padelPlay.repository.PaiementRepository;
+import com.padelPlay.repository.ReservationRepository;
+import com.padelPlay.service.impl.ReservationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -22,8 +20,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.*;
@@ -109,9 +107,8 @@ class ReservationServiceTest {
         matchPrive = Match.builder()
                 .terrain(terrain)
                 .organisateur(organisateur)
-                .date(LocalDate.now().plusDays(25))
-                .heureDebut(LocalTime.of(15, 0))
-                .heureFin(LocalTime.of(16, 30))
+                .dateDebut(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(15, 0)))
+                .dateFin(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(16, 30)))
                 .typeMatch(TypeMatch.PRIVE)
                 .statut(StatutMatch.PLANIFIE)
                 .nbJoueursActuels(1)
@@ -123,9 +120,8 @@ class ReservationServiceTest {
         matchPublic = Match.builder()
                 .terrain(terrain)
                 .organisateur(organisateur)
-                .date(LocalDate.now().plusDays(25))
-                .heureDebut(LocalTime.of(17, 0))
-                .heureFin(LocalTime.of(18, 30))
+                .dateDebut(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(17, 0)))
+                .dateFin(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(18, 30)))
                 .typeMatch(TypeMatch.PUBLIC)
                 .statut(StatutMatch.PLANIFIE)
                 .nbJoueursActuels(1)
@@ -137,9 +133,8 @@ class ReservationServiceTest {
         matchComplet = Match.builder()
                 .terrain(terrain)
                 .organisateur(organisateur)
-                .date(LocalDate.now().plusDays(25))
-                .heureDebut(LocalTime.of(19, 0))
-                .heureFin(LocalTime.of(20, 30))
+                .dateDebut(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(19, 0)))
+                .dateFin(java.time.LocalDateTime.of(LocalDate.now().plusDays(25), LocalTime.of(20, 30)))
                 .typeMatch(TypeMatch.PUBLIC)
                 .statut(StatutMatch.COMPLET)
                 .nbJoueursActuels(4)
